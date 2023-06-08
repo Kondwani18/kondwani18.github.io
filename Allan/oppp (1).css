@@ -1,0 +1,15 @@
+ *
+*{padding: 0%;margin: 0%;text-decoration: none;
+list-style:none;box-sizing: border-box;}
+body{font-family:'Trebuchet MS';}
+nav{background:#aa1106f3;height: 150px;width: 100%;}
+label.logo{color: rgb(19, 20, 20);font-size: 40px;line-height: 80px;
+padding: 0% 100px;font-weight: bold;}
+nav ul{float:right;margin-right: 20px;}
+nav ul li{display: inline-block;line-height: 80px;margin: 0 5px;}
+nav ul li a{color:#f2f7f6;font-size: 15px;
+text-transform: uppercase;border-radius: 3px;padding: 7px 13px;}
+a:hover{background: #171817;transition: 5s;}
+#pa1{font-size: 50px; color:greenyellow}
+#pa2{font-size: 45px;color:orange ; width: 500px;text-align: justify;text-justify: inter-word;}
+#pa3{font-size: 40px;text-align: justify; width: 500px;height:500px;text-align: justify;text-justify: inter-word;}

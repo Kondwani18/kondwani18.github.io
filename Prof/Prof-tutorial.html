@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Prof theater!!!" content="Atain the required knowledge and skill for the outside industry!!!">
+    <title>Tutorial Channel</title>
+    <link rel="stylesheet" href="MPS.css">
+    <style>
+        dd { 
+          display: block;
+          margin-left: 29px;
+        }
+        </style>
+</head>
+<body>
+    <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+        <h1>Professor`s Tutorial Site</h1>
+      </div>
+    
+    <div style="overflow:auto">
+
+        <div class="menu">
+            <a href="../home.html">HOME</a>
+            <a href="#">Loop control statements</a>
+            <a href="#">OOPP</a>
+            <a href="Shinga.html">Sorting Techinques</a>
+          </div>
+
+          <div class="main">
+            <h2>Programming [Python]</h2>
+            <h3>Functions</h3>
+            <p>A function is a sequence of statements which performs some kind of task. 
+                We use functions to eliminate code duplication – instead of writing all the statements at
+                 every place in our code where we want to perform the same task, 
+                 we define them in one place and refer to them by the function name. 
+                 If we want to change how that task is performed, we wil now mostly only need to change code in one place.</p>
+            <p>Here is a definition of a simple function which takes no parameters and doesn’t return any values:</p> 
+            <code>
+                def print_a_message(): <br>
+                    <dd>print("Hello, world!")</dd>
+            </code>    
+    
+            <p>We use the def statement to indicate the start of a function definition. 
+                The next part of the definition is the function name, in this case print_a_message, 
+                followed by round brackets (the definitions of any parameters that the function takes will go in between them) 
+                and a colon. Thereafter, 
+                everything that is indented by one level is the body of the function.
+            </p>
+    
+            <p>
+                    Functions do things, so you should always choose a function name which explains as simply as accurately as possible 
+                    what the function does. This will usually be a verb or some phrase containing a verb. 
+                    If you change a function so much that the name no longer accurately reflects what it does, 
+                    you should consider updating the name – although this may sometimes be inconvenient.
+            </p>
+    
+            <p>
+                    This particular function always does exactly the same thing: it prints the message "Hello, world!".
+            </p>
+    
+            <p>
+                    Defining a function does not make it run – when the flow of control reaches the function definition and executes it, 
+                    Python just learns about the function and what it will do when we run it. To run a function, we have to call it. 
+                    To call the function we use its name followed by round brackets (with any parameters that the function takes in between them):
+            </p>
+            <code>
+                print_a_message()
+            </code>
+            
+            <p>
+                Of course we have already used many of Python’s built-in functions, such as print and len:
+            </p>
+            
+            <code>
+                print("Hello") <br> len([1, 2, 3])
+            </code>
+    
+            <p>
+                Many objects in Python are callable, which means that you can call them like functions 
+                – a callable object has a special method defined which is executed when the object is called. 
+                For example, types such as <code>str, int or list</code> can be used as functions, 
+                to create new objects of that type (sometimes by converting an existing object):
+            </p>
+    
+            <code>
+                num_str = str(3) <br>num = int("3") <br><br>
+                people = list() # make a new (empty) list <br>
+                people = list((1, 2, 3)) # convert a tuple to a new list
+            </code> <br>
+    
+            <p>
+                In general, classes (of which types are a subset) are callable 
+                – when we call a class we call its constructor method, which is used to create a new object of that class. 
+                We will learn more about classes in the next chapter, 
+                but you may recall that we already called some classes to make new objects when we raised exceptions:
+            </p> <br>
+    
+            <code>
+                raise ValueError("There's something wrong with your number!")
+            </code> <br> 
+    
+            <p>
+                Because functions are objects in Python, we can treat them just like any other object – we can assign a function as the value of a variable. 
+                To refer to a function without calling it, we just use the function name without round brackets:
+            </p>
+    
+            <code>
+                my_function = print_a_message <br>
+                # later we can call the function using the variable name my_function()
+            </code>
+    
+            <p>
+                Because defining a function does not cause it to execute, we can use an identifier inside a 
+                function even if it hasn’t been defined yet – as long as it becomes defined by the time we run the function. 
+                For example, if we define several functions which all call each other, 
+                the order in which we define them doesn’t matter as long as they are all defined before we start using them:
+            </p>
+    
+            <code>
+                def my_function(): <br>
+                <dd>my_other_function()</dd> <br><br>
+                def my_other_function(): <br>
+                <dd>print("Hello!")</dd> <br><br>
+                # this is fine, because my_other_function is now defined <br>
+                my_function()
+            </code>
+    
+            <p>
+                If we were to move that function call up, we would get an error:
+            </p>
+    
+            <code>
+                def my_function(): <br>
+                <dd>my_other_function()</dd> <br><br>
+                # this is not fine, because my_other_function is not defined yet! <br>
+                my_function() <br><br>
+                def my_other_function(): <br>
+                <dd>print("Hello!")</dd>
+            </code>
+    
+            <p>
+                Because of this, it’s a good idea to put all function definitions near the top of your program, 
+                so that they are executed before any of your other statements.
+            </p>
+    
+          </div>
+          <div class="right">
+            <h2>About</h2>
+            <p>Name : MWANZA STEVEN <br>
+               SIN #: 22002591 <br>
+               NRC #: 567782/10/1 
+            </p>
+          </div>
+    
+    </div>
+      
+    <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright @Professor`s.com</div>
+
+</body>
+</html>
