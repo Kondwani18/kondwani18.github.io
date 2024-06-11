@@ -6,39 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kondwani Nyirenda - Front End Developer</title>
     <link rel="stylesheet" href="inde.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   
 </head>
 
 <body>
     <header>
         <img src="kayd.jpg" alt="Profile Picture" id="profile-img">
-        <h1>Kondwani Nyirenda</h1>
-        <p>Front End Developer</p>
+        <h1>Kondwani Nyirenda <span class="emoji">👨‍💻</span></h1>
+        <p>Front End Developer <span class="emoji">🚀</span></p>
     </header>
-    <button id="mode-toggle">Toggle Mode</button>
-     <section>
-        <h2>About Me</h2>
-        <p>Hello! I am Kondwani Nyirenda, a 22-year-old Zambian citizen with a diploma in Information Technology from
-            Evelyn Hone College. I am passionate about front-end development and have less than 1 year of experience in
-            the field.</p>
+    <button id="mode-toggle">Toggle Mode <span class="emoji">🌙</span></button>
 
-        <h2>Education</h2>
-        <p>Diploma in Information Technology<br>Evelyn Hone College</p>
+    <div class="container">
+        <section>
+            <h2>About Me <span class="emoji">📜</span></h2>
+            <p>Hello! I am Kondwani Nyirenda, a 22-year-old Zambian citizen with a diploma in Information Technology from Evelyn Hone College. I am passionate about front-end development and have less than 1 year of experience in the field.</p>
+        </section>
 
-        <h2>Projects</h2>
-        <ul class="project-list">
-            <li>
-                <a href="home1.html" target="_blank">Student Management System</a> - Developed a
-                comprehensive student management system to streamline administrative tasks.
-            </li>
-            <li>
-                <a href="home.html" target="_blank">Currency Converter</a> - Created a simple web
-                application that allows users to change currency based on location using HTML, CSS, and JavaScript. The
-                project is responsive, neat, and visually appealing.
-            </li>
-        </ul>
-    </section>
+        <section>
+            <h2>Education <span class="emoji">🎓</span></h2>
+            <p>Diploma in Information Technology<br>Evelyn Hone College</p>
+        </section>
 
-    <!-- Add this JavaScript code to enable the mode toggle functionality -->
+        <section>
+            <h2>Skills <span class="emoji">💻</span></h2>
+            <div class="skills">
+                <div>
+                    <span>HTML</span>
+                    90%
+                </div>
+                <div>
+                    <span>CSS</span>
+                    70%
+                </div>
+                <div>
+                    <span>JavaScript</span>
+                    50%
+                </div>
+                <div>
+                    <span>PHP</span>
+                    30%
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects <span class="emoji">📁</span></h2>
+            <ul class="project-list">
+                <li>
+                    <a href="home1.html" target="_blank">Student Management System</a> - This is a system i developed as part ofmy end of year  project at Evelyn hone last year, it is a system developed to help adn streamline both stdent and administrative tasks. .
+                </li>
+                <li>
+                    <a href="home.html" target="_blank">Currency Converter</a> - Created a simple web application that allows users to change currency based on location using HTML, CSS, and JavaScript. The project is responsive, neat, and visually appealing.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact Information <span class="emoji">📞</span></h2>
+            <p>Email: <a href="mailto:kondwani.nyirenda18@gmail.com">kondwani.nyirenda18@gmail.com</a><br>
+                Phone: +260-978-230319
+            </p>
+        </section>
+
+        <section>
+            <h2>Social Accounts <span class="emoji">🌐</span></h2>
+            <p>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a><br>
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Contact me: <a href="mailto:kondwani.nyirenda18@gmail.com">kondwani.nyirenda18@gmail.com</a> <br>
+            +260-978-230319
+        </p>
+    </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const profileImg = document.getElementById('profile-img');
@@ -60,12 +106,6 @@
             });
         });
     </script>
-
-    <footer>
-        <p>Contact me: <a href="mailto:kondwani.nyirenda18@gmail.com">kondwani.nyirenda18@gmail.com</a> <br>
-            +260-978-230319
-        </p>
-    </footer>
 </body>
 
 </html>
