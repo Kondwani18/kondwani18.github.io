@@ -1,14 +1,108 @@
 body {
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-image: url('programmer-background.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-attachment: fixed;
     color: #333;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #282c34; /* Web developer-themed color */
+    color: #61dafb; /* React logo color for a modern look */
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+#mode-toggle {
+    margin: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #282c34;
+    color: #61dafb;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media(min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.skills div {
+    text-align: center;
+}
+
+.skills div span {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.project-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-list li {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #282c34;
+    color: #61dafb;
+}
+
+footer a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 .dark-mode {
@@ -16,81 +110,12 @@ body {
     color: #fff;
 }
 
-header {
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    text-align: center;
-    padding: 10px;
-    animation: fadeInUp 1s ease-in-out;
+.dark-mode header, .dark-mode footer, .dark-mode #mode-toggle {
+    background-color: #555;
+    color: #fff;
 }
 
-h1 {
-    color: #ecf0f1;
-    font-size: 1.5em;
-    margin-bottom: 5px;
-}
-
-h2 {
-    color: #3498db;
+.emoji {
     font-size: 1.2em;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-section {
-    max-width: 600px; /* Adjusted max-width */
-    margin: 0 auto;
-    padding: 2em;
-}
-
-p {
-    line-height: 1.6;
-}
-
-a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.project-list {
-    list-style: none;
-    padding: 0;
-}
-
-.project-list li {
-    margin-bottom: 1em;
-}
-
-.project-list a {
-    font-weight: bold;
-}
-
-#profile-img {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-footer {
-    background-color: #34495e;
-    color: #ecf0f1;
-    text-align: center;
-    padding: 5px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    max-width: 600px; /* Adjusted max-width */
+    margin-right: 5px;
 }
